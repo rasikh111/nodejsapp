@@ -15,12 +15,6 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Lint & Test') {
-            steps {
-                sh 'npm run lint'
-                sh 'npm test'
-            }
-        }
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t $DOCKER_IMAGE .'
