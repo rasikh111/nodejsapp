@@ -201,4 +201,4 @@ nodejsapp/
 
 ## Conclusion
 
-By following this guide, you have successfully set up a complete CI/CD pipeline for a Node.js application using Jenkins and Docker. Happy DevOps!
+By following this guide, you have successfully set up a complete CI/CD pipeline for a Node.js application using Jenkins and Docker.
