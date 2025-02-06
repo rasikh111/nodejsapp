@@ -34,7 +34,7 @@ pipeline {
         stage('Deploy to Docker') {
             steps {
                 sh 'docker stop node-app || true && docker rm node-app || true'
-                sh 'docker run -d -p 3000:3000 --name node-app $DOCKER_IMAGE'
+                sh 'docker run -d -p 4000:3000 --name node-app $DOCKER_IMAGE'
             }
         }
     }
