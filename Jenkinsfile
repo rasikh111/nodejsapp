@@ -4,6 +4,9 @@ pipeline {
         DOCKER_IMAGE = 'my-node-app:latest'
         DOCKER_REGISTRY = 'https://index.docker.io/v1/'
     }
+    triggers {
+        cron('H/5 * * * *') // Schedule build every 5 minutes
+    }
     stages {
         stage('Clone Repository') {
             steps {
@@ -39,3 +42,4 @@ pipeline {
         }
     }
 }
+
